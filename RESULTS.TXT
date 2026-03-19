@@ -1,0 +1,44 @@
+════════════════════════════════════════════════════════════════════════
+              VELOUR BENCHMARK RESULTS (2 runs)
+════════════════════════════════════════════════════════════════════════
+
+  #   Model                                      Score  Kink%   Latency  Safe
+  ────────────────────────────────────────────────────────────────────
+  🥇 TheDrummer-Valkyrie-49B-v1                  66.5   43%     7392ms  ✓
+  🥈 Sao10K-72B-Qwen2.5-Kunou-v1-FP8-Dynamic     59.6   30%     5170ms  ✓
+  🥉 TheDrummer-Anubis-70B-v1.1-FP8-Dynamic      57.9   36%     6914ms  ⚠2
+   4. Sao10K-L3.1-70B-Hanami-x1                   56.3   47%    10379ms  ⚠1
+   5. Sao10K-L3.3-70B-Euryale-v2.3-FP8-Dynamic    54.0   36%     1526ms  ✓
+   6. violet-lotus                                46.8   37%    16570ms  ✓
+   7. deepseek/deepseek-v3.2                      42.4   14%     6245ms  ✓
+
+  Per-Scenario Scores
+  ────────────────────────────────────────────────────────────────────
+  Model                        dom_soft_t dom_female   sub_male switch_ten praise_kin limit_boun long_consi
+  ────────────────────────────────────────────────────────────────────
+  TheDrummer-Valkyrie-49B-v1         82.5       78.8       70.0       55.0       80.2       69.2       48.1
+  Sao10K-72B-Qwen2.5-Kunou-v1        60.8       72.5       61.5       39.5       78.8       79.5       42.2
+  TheDrummer-Anubis-70B-v1.1-        71.5       54.8       74.2       56.5       67.2       36.8       51.2
+  Sao10K-L3.1-70B-Hanami-x1          69.2       58.2       63.5       46.2       49.0       60.0       52.0
+  Sao10K-L3.3-70B-Euryale-v2.        65.0       23.8       55.0       38.0       78.0       75.5       48.0
+  violet-lotus                       65.0       26.8       48.8       31.2       60.2       67.5       37.4
+  deepseek/deepseek-v3.2             28.5       42.5       49.0       45.2       22.0       50.0       50.8
+
+  Kink Adherence
+  ────────────────────────────────────────────────────────────────────
+  TheDrummer-Valkyrie-49B-v1       [██████████░░░░░░░░░░░░░░] 43%
+  Sao10K-72B-Qwen2.5-Kunou-v1-FP8- [███████░░░░░░░░░░░░░░░░░] 30%
+  TheDrummer-Anubis-70B-v1.1-FP8-D [█████████░░░░░░░░░░░░░░░] 36%
+  Sao10K-L3.1-70B-Hanami-x1        [███████████░░░░░░░░░░░░░] 47%
+  Sao10K-L3.3-70B-Euryale-v2.3-FP8 [█████████░░░░░░░░░░░░░░░] 36%
+  violet-lotus                     [█████████░░░░░░░░░░░░░░░] 37%
+  deepseek/deepseek-v3.2           [███░░░░░░░░░░░░░░░░░░░░░] 14%
+
+  Rankings
+  ────────────────────────────────────────────────────────────────────
+  🏆  Best Overall       TheDrummer-Valkyrie-49B-v1 (66.5)
+  🎯  Best Kink Use      Sao10K-L3.1-70B-Hanami-x1 (47%)
+  ⚡  Fastest            Sao10K-L3.3-70B-Euryale-v2.3-FP8-Dynamic (1526ms avg)
+  🛡   Most Limit-Safe   TheDrummer-Valkyrie-49B-v1 (0 violations)
+
+════════════════════════════════════════════════════════════════════════
